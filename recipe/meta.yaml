@@ -1,5 +1,5 @@
 {% set name = "xeofs" %}
-{% set version = "3.0.4" %}
+{% set version = "3.0.6" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xeofs-{{ version }}.tar.gz
-  sha256: 406f1b20fea43a627f00f9e550d3ac651a69562af5e854f26e1b7f16fff37449
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/xeofs-{{ version }}.tar.gz
+  sha256: 397844fac117d1910bab4004d3d174d2a5f3ce5f4873ec90ef399af609bc3a00
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
